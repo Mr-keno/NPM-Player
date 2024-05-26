@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AboutController">
+   <center>
+      <AnchorPane prefHeight="295.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="92.0" layoutY="43.0" prefHeight="30.0" prefWidth="284.0" text="Shortcut Keys" textFill="#ff1212" underline="true">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Text fontSmoothingType="LCD" layoutX="75.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alt + Right Arrow Key  -  10 sec forwards">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="75.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alt + Left Arrow Key    - 10 sec backwards">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="75.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alt + Up Arrow Key      - Volume Up">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="75.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alt + Down Arrow Key  - Volume Down">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="75.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Space Bar                     - Play &amp; Pause">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="75.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter                             - Fullscreen On &amp; off">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="75.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esc Key                         - Fullscreen Off">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <GridPane prefHeight="77.0" prefWidth="462.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#processReturn" prefHeight="38.0" prefWidth="74.0" text="OK" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="130.0" />
+               </GridPane.margin>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/checked.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>
